@@ -3,7 +3,7 @@ const Link = (props) => {
   return (
     <>
       <li>
-        <a href={props.text}> {props.text} </a>
+        <a href={props.text} target='_blank' rel="noopener noreferrer"> {props.text} </a>
         <button
           onClick={(event) => props.remover(event, props.number, props.id)}
         >
