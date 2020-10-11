@@ -78,7 +78,7 @@ class App extends Component {
           key={hs.id}
           remover={this.handleClickRemoveLink}
           number={selectedSection}
-          text={link}
+          text={/https:\/\/|http:\/\//.test(link) ? link : 'http://' + link}
           id={hs.id}
         />
       );
