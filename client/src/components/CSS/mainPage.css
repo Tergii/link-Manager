@@ -1,0 +1,99 @@
+#bc-img {
+    background-image: url("./icons/bg-circle.png");
+    position: absolute;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.82;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+.model-sct {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 60px 0px 30px 0px;
+
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 50px;
+    margin: auto;
+    background-image: linear-gradient(180deg, #27262E 0%, #16151B 65%);
+    background-color: transparent;
+}
+
+
+.infoFrame {
+    background-color: rgba(90, 88, 101, 0.17);
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    max-width: 1140px;
+    position: relative;
+    display: flex;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description h2 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.description p {
+    line-height: 1.7em;
+    font-weight: 500;
+    font-size: 17px;
+    color: #888888;
+    margin: 20px 10px 50px 10px;
+}
+
+.jumpButton {
+    font-size: 13px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #D24135;
+    box-shadow: 50px 0px 42px 2px #A22C22 inset;
+    padding: 020px 30px 20px 30px;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    will-change: transform;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.jumpButton:hover {
+    transition: 0.3s ease-out;
+    transform: translateY(-10px);
+}
+
+.photos {
+    width: 50%;
+}
+
+.scale-img {
+    margin: 50px 0px;
+    max-width: 100%;
+    height: auto;
+}

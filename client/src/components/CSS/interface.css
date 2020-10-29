@@ -1,0 +1,34 @@
+.int-sct {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    min-height: 100px;
+    background: #18181B;
+    border: 1px solid grey;
+}
+.save-sct {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    min-height: 100px;
+    background: #26262C;
+    border: 1px solid grey;
+    border-radius: 0% 0% 1% 1%;
+}
+.int-inp {
+    background: #2F2F32;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    width: 80%;
+    padding-left: 10px;
+}
+@media all and (max-width:70em) {
+    .int-sct {
+      width: 100%;
+    }
+    .save-sct{
+        width: 100%;
+    }
+  }

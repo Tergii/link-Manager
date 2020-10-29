@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.no-outline-on-focus *:focus {
+  outline: none !important;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #26252d;
+
+  color: white;
+}
+
+a {
+  color: hotpink;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin: 10% 0px 5% 0px;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.select-box {
+  background-color: #26252D;
+  color: white !important;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.select-box:focus {
+  outline: dotted red;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.close:focus {
+  outline: dotted red;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.last {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1px;
+  padding: 5px;
+}
+
+.last:last-child {
+  margin-left: auto;
+}
+
+.flex-row::before {
+  content: "D";
+  margin: 1px auto 1px 1px;
+  visibility: hidden;
+  padding: 5px;
+  background: #ddd;
+}
+
+.flex-row-interface {
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-evenly;
+}
+
+.flex-row-sections {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-row-sections-rigth {
+  display: flex;
+  justify-content: flex-end;
+  width: 42%;
+  margin-bottom: 10px;
+}
+
+.flex-row-sections-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.round-btn {
+  width: 35px !important;
+  height: 35px;
+  border-radius: 100% !important;
+}
+
+.center {
+  transform: translate(0%, -50%);
+}
+
+.center-title {
+  transform: translate(65%, 0%);
+}
+
+.special-margin {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+@media all and (max-width:70em) {
+  .flex-row::before {
+    display: none;
+  }
+  .adjust {
+    width: 50%;
+  }
+  .section{
+    width: 100%;
+    font-size: 10px;
+  }
+  .center-title{
+    transform: none;
+  }
+  .select-box{
+    width: 100%;
+  }
+  .title-text{
+    font-size: 16px !important;
+  }
+  .custom-btn-links{
+    font-size: 14px !important;
+  }
+  .flex-row{
+    font-size: 14px !important;
+  }
+  .info-frame {
+    font-size: 12px !important;
+  }
+  .description {
+    width: 100% !important;
+  }
+  .description h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.custom-btn {
+  width: 100%;
+  background-color: #5a6268;
+  border: 1px solid #5a6268;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+
+}
+
+.custom-btn:focus {
+  outline: dotted red;
+}
+
+.custom-btn-links {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 1px 0 black;
+  opacity: .5;
+  background: transparent;
+  border: none;
+}
+
+.custom-btn-links:focus {
+  outline: dotted red;
+}
+
+.custom-btn-red {
+  border: none !important;
+  font-weight: bold;
+  background-color: #D24135;
+  box-shadow: 50px 0px 42px 2px #A22C22 inset;
+  position: relative;
+  will-change: transform;
+  text-decoration: none;
+}
+
+.custom-btn-red:focus {
+  box-shadow: 50px 0px 42px 2px #A22C22 inset;
+  background-color: #D24135;
+  outline: dotted red;
+}
+.custom-btn-red:hover {
+ opacity: .85;
+}
+
+
+.custom-btn-links:hover {
+  opacity: .75;
+}
+
+.custom-btn:hover {
+  background-color: #4b5256;
+}
+
+.custom-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.title-text {
+  font-size: 30px;
+}
+
+
+
+.modal-content {
+  color: white;
+  border-color: red;
+  background: grey;
+  background-image: linear-gradient(180deg, #27262E 0%, #16151B 65%);
+  background-color: transparent;
+}
+
+.modal-content input:focus {
+  background-color: #26252D;
+}
+
+.custom-btn-open {
+  background: 'transparent';
+  border: 'none';
+}
+.small-font {
+  font-size: 1rem;
+}
+.hover-cls {
+  color: white;
+}
