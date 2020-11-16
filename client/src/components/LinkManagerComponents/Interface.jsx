@@ -2,6 +2,7 @@ import React from "react";
 import Option from "./Options.jsx";
 const Interface = (props) => {
   const options = [];
+  let message = props.state.infoBoxMessage
   for (let i = 0; i < props.state.createComponent; i++) {
     options.push(<Option key={options.length} lenght={options.length} />);
   }
@@ -48,8 +49,11 @@ const Interface = (props) => {
         </div>
 
         <label>
-          <button className='custom-btn' onClick={props.handleSendUpdate}>Save All</button>
+          <button style={{ backgroundColor: message.btnColor }} className='custom-btn' onClick={props.handleSendUpdate}>Save All</button>
         </label>
+        <div>
+          <span style={{ color: message.color, fontSize: '20px' }}>{message.message}</span>
+        </div>
       </div>
 
     </>

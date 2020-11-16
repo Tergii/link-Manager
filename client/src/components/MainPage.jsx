@@ -1,6 +1,6 @@
 import React from 'react';
 import './CSS/mainPage.css';
-import exmpleApp from './CSS/icons/exmpl-app.JPG';
+import linkIco from './CSS/icons/link-ico.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { isRegister, showRegModal, getVerify } from './reducers/loginSys';
 import { Link } from 'react-router-dom';
@@ -12,9 +12,8 @@ const MainPage = () => {
     const showModal = () => dispatch(showRegModal(!modal));
     return (
         <>
-            <section className='model-sct'>
-
-                <div id='bc-img'></div>
+            <main className='model-sct'>
+                {/* <div id='bc-img'></div> */}
                 <div className='infoFrame'>
                     <div className='description'>
                         <h2>Manage your links <br /> with LinkManager </h2>
@@ -24,15 +23,40 @@ const MainPage = () => {
                         </div>
                     </div>
                     <div className='photos'>
-                        <div>
-                            <img className='scale-img' src={exmpleApp} alt="obrazek aplikacji" />
-                        </div>
                     </div>
                 </div>
-
-            </section>
-
-
+                <section className='amazing-section' >
+                    <div className='fsft'>
+                        <h2>Amazing Features</h2>
+                        <p>Get familiar with awesome features which LinkManager provide</p>
+                    </div>
+                    <div className='features'>
+                        <div className='feature'>
+                            <div className='ico'>
+                                <div className="ico-div">...</div>
+                            </div>
+                            <div className='title'>URL shortener</div>
+                            <div className='descriptionn'>Coming soon ...</div>
+                        </div>
+                        <div id='primary' className='feature infoFrame'>
+                            <div className='ico'>
+                                <div className="ico-div">
+                                    <img src={linkIco} alt="link icon" />
+                                </div>
+                            </div>
+                            <div className='title'>LinkManager </div>
+                            <p className='descriptionn'>Create sections where your links will be storage . Give your links a name and open them all at once</p>
+                        </div>
+                        <div className='feature'>
+                            <div className='ico'>
+                                <div className="ico-div">...</div>
+                            </div>
+                            <div className='title'>...</div>
+                            <div className='descriptionn'>...</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </>);
 }
 

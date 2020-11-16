@@ -14,7 +14,8 @@
 
 .model-sct {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     position: relative;
     padding: 60px 0px 30px 0px;
@@ -26,7 +27,7 @@
     min-height: 100vh;
     padding: 0px 50px;
     margin: auto;
-    background-image: linear-gradient(180deg, #27262E 0%, #16151B 65%);
+    background-image: linear-gradient(180deg, #27262E 0%, #16151B 115%);
     background-color: transparent;
 }
 
@@ -96,4 +97,118 @@
     margin: 50px 0px;
     max-width: 100%;
     height: auto;
+}
+.fsft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 60px 0px;
+}
+.fsft p {
+    color:#888888 ;
+    padding: 20px;
+}
+
+.fsft h2 {
+    font-size: 50px;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+}
+.feature.infoFrame {
+    width: 350px;
+    height: 330px;
+}
+.ico {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.1em;
+    letter-spacing: 0.8px;
+    padding: 20px 0px;
+}
+.descriptionn {
+    flex: 2;
+    display: flex;
+    color: #888888;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7em;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.ico-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #1D1D24 ;
+    padding: 20px 20px 20px 20px;
+}
+
+.amazing-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    background-color: #27262E;
+    padding: 70px 20% 70px 20%;
+    background-image: linear-gradient(360deg, #27262E 0%, #16151B 150%);
+}
+
+.footer-section {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-container {
+    display: flex;
+    padding-bottom: 30px ;
+}
+
+.title-footer {
+    font-size:23px ;
+}
+.description-footer {
+    color: #888888;
+    font-size: 17px;
+    padding-right: 70px;
+}
+
+.footer-container .description-footer {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-ico {
+    flex: 1;
+}
+#contact-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer-row {
+    display: flex;
 }

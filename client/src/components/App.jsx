@@ -8,6 +8,7 @@ import userInrerface from './UserInterface';
 import { addUserData, setVerified, setMail } from './reducers/loginSys';
 import { logInUser } from '../api/index';
 import ContactPage from "./contactPage";
+import Footer from './Footer';
 
 class App extends Component {
    state = {
@@ -41,8 +42,8 @@ class App extends Component {
                   <Route path='/links' component={LinkManager} />
                   <Route path='/contact' component={ContactPage} />
                   {this.props.mystate.loginSys.verified ? <Route path='/userPanel' component={userInrerface} /> : null}
-                  <span>version 2.0</span>
                </div>
+               <Footer />
             </Router>
          </>)
    }

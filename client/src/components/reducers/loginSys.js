@@ -9,6 +9,7 @@ export const slice = createSlice({
         regModal: false,
         logModal: false,
         verified: false,
+        isEditing: false,
     },
     reducers: {
         addUserData: (state, action) => {
@@ -26,14 +27,18 @@ export const slice = createSlice({
         },
         setVerified: (state, action) => {
             state.verified = action.payload
+        },
+        setEditing: (state, action) => {
+            state.isEditing = action.payload;
         }
     }
 });
 export default slice.reducer;
-export const { addUserData, showRegModal, showLogModal, setVerified, setMail } = slice.actions;
+export const { addUserData, showRegModal, showLogModal, setVerified, setMail, setEditing } = slice.actions;
 export const isRegister = state => state.loginSys.regModal;
 export const isLogin = state => state.loginSys.logModal;
 export const getUserName = state => state.loginSys.userName;
 export const getEmail = state => state.loginSys.userEmail;
 export const getPass = state => state.loginSys.userPass;
 export const getVerify = state => state.loginSys.verified;
+export const getEditing = state => state.loginSys.isEditing;

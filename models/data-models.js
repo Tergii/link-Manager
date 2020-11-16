@@ -7,10 +7,6 @@ const linkSchema = new Schema({
             type: Number,
 
         },
-        cos: {
-            type: String,
-
-        },
         links: {
             type: Object,
 
